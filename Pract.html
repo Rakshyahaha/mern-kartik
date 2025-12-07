@@ -1,0 +1,1537 @@
+ <!-- HappyNewYear -->
+ <!-- <!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css</title>
+
+    <link rel="stylesheet" href="index.css"> 
+
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Playwrite+CZ:wght@100..400&display=swap');
+  *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        padding: 10px;
+      }
+
+      .card {
+        max-width: 400px;
+        border: 1px solid black;
+        height: 300px;
+        box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+        border-radius: 10px;
+        overflow: hidden;
+      }
+
+      img {
+        width: 100%;
+      }
+
+      /* .card-info {
+        padding: 5px;
+      } */
+    </style>
+    
+   </head>
+
+  <body>
+
+    <div class="card">
+      <img
+        src="https://images.unsplash.com/photo-1763493411066-48cc93cc82db?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwyOHx8fGVufDB8fHx8fA%3D%3D"
+        alt="">
+      <div class="card-info">
+        <h1>Happy New Year</h1>
+      </div>
+
+    </div>
+  </body>
+  </html>-->
+
+  <!-- Beach House -->
+ <!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beach</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+body{
+  padding: 10px; 
+}
+section{
+  max-width: 800px;
+}
+.Images{
+  display: flex;
+  gap: 10px;
+  
+}
+img{
+  border-radius: 10px;
+}
+.img1{
+  width: 40%;
+}
+.img2{
+  width: 30%;
+}
+.img3{
+  width:30%;
+}
+.details{
+  margin-top: 20px;
+  
+}
+.Check{
+  display: flex;
+  justify-content: space-between;
+  background-color: purple;
+ 
+ margin:20px 0;
+}
+button{
+  background-color: orange;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  padding: 10px;
+}
+  </style>
+</head>
+<body>
+  <section>
+    <div class="Images">
+       <img class="img1" src="https://tailwindcss.com/_next/static/media/responsive-1.fd2e9248.png" alt=""> 
+       <img class="img2" src="https://tailwindcss.com/_next/static/media/responsive-2.8cfea49d.png" alt="">
+        <img  class="img3" src="//tailwindcss.com/_next/static/media/responsive-3.e7467feb.png" alt="">
+    </div>
+    <div class="details">
+      <h3>Entire House</h3>
+      <div class="Check">
+        <h1>Beach House on Lake Huron</h1>
+        <button>Check availabity</button>
+      </div>
+      <p>This sunny and spacious room is for those traveling light and looking for a comfy and cozy place to lay their
+          head for a night...</p>
+      
+    </div>
+
+
+  </section>
+  
+</body>
+</html> -->
+
+
+<!-- Middle box below -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Boxbelow</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing:border-box;
+    }
+    body{
+      padding:10px;
+    }
+    .Outerbox{
+      border: 1px solid black;
+      background-color: purple;
+      border-radius: 5px;
+      height: 120px;
+      width: 400px;
+      display: flex;
+      gap: 10px;
+      padding: 5px;
+    }
+    .One{
+      height: 50px;
+      width: 100px;
+      background-color: yellow;
+    }
+     .Two{
+
+      height: 50px;
+      width: 100px;
+      background-color: yellow;
+    }
+     .Three{
+      height: 50px;
+      width: 100px;
+      background-color: yellow;
+      align-self: flex-end;
+    }
+     .Four{
+      height: 50px;
+      width: 100px;
+      background-color: yellow;
+    }
+  </style>
+</head>
+<body>
+  <div class="Outerbox">
+<div class="One"></div>
+<div class="Two"></div>
+<div class="Three"></div>
+<div class="Four"></div>
+
+
+
+  </div>
+  
+</body>
+</html> -->
+
+<!-- grid span sir prac -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Flex</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        padding: 20px;
+      }
+
+      .grid-box {
+        max-width: 600px;
+        height: 300px;
+        border: 1px solid black;
+        display: grid;
+        gap: 10px;
+        grid-template-columns: repeat(4, 1fr);
+        /* grid-template-rows: 100px 100px; */
+
+      }
+
+      .item1 {
+        background-color: red;
+        grid-row: span 3;
+
+      }
+
+      .item2 {
+        background-color: aquamarine;
+        grid-column: span 2;
+      }
+
+      .item3 {
+        background-color: yellow;
+
+      }
+
+      .item4 {
+        background-color: violet;
+      }
+
+      .item5 {
+        background-color: steelblue;
+      }
+
+      .item6 {
+        background-color: green;
+        grid-row: span 2;
+      }
+
+      .item7 {
+        background-color: slategray;
+      }
+
+      .item8 {
+        background-color: brown;
+      }
+    </style>
+  </head>
+
+  <body>
+
+    <div class="grid-box">
+
+      <div class="item item1">
+        <h3>Box1</h3>
+
+      </div>
+      <div class="item item2">
+        <h3>Box2</h3>
+
+      </div>
+
+      <div class="item item3">
+        <h3>Box3</h3>
+
+      </div>
+
+      <div class="item item4">
+        <h3>Box4</h3>
+
+      </div>
+      <div class="item item5">
+        <h3>Box5</h3>
+
+      </div>
+      <div class="item item6">
+        <h3>Box6</h3>
+
+      </div>
+      <div class="item item7">
+        <h3>Box7</h3>
+
+      </div>
+      <div class="item item8">
+        <h3>Box8</h3>
+
+      </div>
+
+
+    </div>
+
+
+
+    </div>
+
+
+  </body> 
+
+</html>  -->
+
+<!-- gpt generated -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Most Popular Cards</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      padding: 20px;
+      background-color: #f8f9fa;
+    }
+
+    h1 {
+      font-size: 18px;
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      background-color: #000;
+    }
+
+    .card {
+      padding: 20px;
+      border-radius: 10px;
+      color: white;
+       display: flex;
+      flex-direction: column;
+      justify-content: space-between; 
+      min-height: 200px;
+    }
+
+    .card.white {
+      background-color: white;
+      color: #333;
+      border: 1px solid #ddd;
+    }
+
+    .label {
+      font-size: 12px;
+      text-transform: uppercase;
+      font-weight: bold;
+      padding: 4px 8px;
+      border-radius: 12px;
+      background-color: rgba(255, 255, 255, 0.3);
+      display: inline-block;
+      margin-bottom: 10px;
+    }
+
+    .card h2 {
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      font-size: 14px;
+      line-height: 1.5;
+      flex-grow: 1;
+    }
+
+    .card a {
+      margin-top: 10px;
+      font-size: 14px;
+      text-decoration: none;
+      color: inherit;
+      font-weight: bold;
+      display: inline-flex;
+      align-items: center;
+    }
+
+    .card a span {
+      display: inline-block;
+      margin-left: 5px;
+      background-color: #fff;
+      color: #000;
+      border-radius: 50%;
+      width: 18px;
+      height: 18px;
+      text-align: center;
+      line-height: 18px;
+      font-size: 12px;
+    }
+
+    /* Card background colors */
+    .card.purple { background-color: #8a4fff; }
+    .card.blue { background-color: #007bff; }
+    .card.darkblue { background-color: #003f7f; }
+
+  </style>
+</head>
+<body>
+  <h1>Most popular</h1>
+
+  <div class="cards">
+    <div class="card purple">
+      <div class="label">What's New</div>
+      <h2>Our Video Conference Integrations Are Now Free—Forever</h2>
+      <p>Integrate for free with Zoom, Microsoft Teams, and GoToMeeting to stay connected in 2020 and beyond.</p>
+      <a href="#">View more <span>→</span></a>
+    </div>
+
+    <div class="card blue">
+      <div class="label">Creating Calendly</div>
+      <h2>What working from home is really like during a pandemic</h2>
+      <p>Nothing is “normal” but work and life can find balance if your company supports you.</p>
+      <a href="#">View more <span>→</span></a>
+    </div>
+
+    <div class="card darkblue">
+      <div class="label">Sales</div>
+      <h2>Convert 60% more PPC leads into bookings using Black Propeller’s secret weapon</h2>
+      <p>John Thornton of PPC agency Black Propeller explains how Calendly transforms his clients' campaigns.</p>
+      <a href="#">View more <span>→</span></a>
+    </div>
+
+    <div class="card white">
+      <div class="label">Sales</div>
+      <h2>Deploying virtual appointments on your retail website</h2>
+      <p>Learn what to consider when deploying virtual appointments on your retail website.</p>
+      <a href="#">View more <span>→</span></a>
+    </div>
+
+    <div class="card white">
+      <div class="label">Customer Stories</div>
+      <h2>Accelerated sales cycle picks up new B2B partners for Lyft</h2>
+      <p>Lyft is onboarding twice the customers they did before trying Calendly.</p>
+      <a href="#">View more <span>→</span></a>
+    </div>
+
+    <div class="card white">
+      <div class="label">Creating Calendly</div>
+      <h2>Motherly advice from Calendly employees</h2>
+      <p>Calendlians share life lessons learned from their mother or throughout their own motherhood journey.</p>
+      <a href="#">View more <span>→</span></a>
+    </div>
+  </div>
+</body>
+</html> -->
+
+<!-- Microdoft -->
+ <!-- <!DOCTYPE html>
+ <html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Microsoft</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body{
+     padding: 0 45px;
+    }
+    header{
+      padding: 15px 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .left{
+      display: flex;
+      gap: 20px;
+      align-items: center;
+    }
+    nav{
+      display: flex;
+      gap:20px ;
+      flex-wrap: wrap;
+
+    }
+   a{
+    text-decoration: none;
+    color: black;
+    font-weight: #413f3f;
+  
+   }
+   a:hover{
+    text-decoration: underline 1.5px solid;
+    text-underline-offset: 3px;
+   }
+   .right{
+    display: flex;
+    gap: 20px;
+   }
+   .hero{
+    height: 250px;
+    background-image: url(https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Grid-Container-Feature-MSCOM-BlackFriday-Merch-FY26HOLPM?scl=1);
+   background-repeat: no repeat;
+   background-position: center;
+   background-size: cover;
+   color: white;
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+  }
+ .info h1{
+  font-size: 2.5rem;
+ }
+.deals{
+  padding: 10px 15px;
+  font-weight: 600;
+
+ @media(max-width:640px){
+  .right{
+    display: none;
+  } 
+  body{
+padding: 0 20px;
+  }
+}
+@media(max-width:544px){
+  .left{
+    flex-direction: column;
+  }}
+  @media(max-width:528px){
+  .info{
+    text-align: center;
+    padding: 0 20px;
+  }}
+
+ @media(max-width:880px){
+  .hero{
+    height: auto;
+      flex-direction: column-reverse;
+    padding-bottom: 20px;
+  }
+}
+
+  </style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+ </head>
+ <body>
+  <header>
+  <div class="left">
+<div class="logo"><img style="height: 28px;"src="assets/logo.png" alt=""></div>
+<nav>
+  <a href=""> Microsoft 365</a>
+  <a href="">Teams</a>
+  <a href="">Copilot</a>
+  <a href="">Windows</a>
+  <a href="">Surface</a>
+   <a href="">Xbox</a>
+   <a href="">Cyber Week deals</a>
+   <a href="">Small Business</a>
+   <a href="">Support</a>
+</nav>
+
+  </div>
+
+
+  <div class="right">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <i class="fa-solid fa-cart-shopping"></i>
+  </div>
+
+
+  </header>  
+  <section class="hero"> 
+    <div class="info">
+      <h1>Cyber Week is here</h1>
+      <p style="margin: 10px 0;">Dont miss your chance to save on select Surface, Xbox, and more.</p>
+       <button class="deals">Shop Deals</button>
+    </div>
+    <div class="hero-img"> <img style="height:200px"
+       src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Feature-MSCOM-BlackFriday-Merch-FY26HOLPM:VP5-1842x1036?fmt=png-alpha" alt=""></div>
+
+
+  </section>
+ </body>
+ </html> -->
+
+ <!-- microsoft aafai -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Microsoftaaf</title>
+  <style>
+    *{
+      margin: 0px;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body{
+      /* padding:10px 45px; */
+    }
+   
+     header{
+      padding:10px 45px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 15px 0px;
+       }
+       .Left{
+       display: flex;
+       align-items: center;
+       gap: 20px;
+       }
+       nav{
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    a {
+      color: black;
+      text-decoration: none;
+    }
+    a:hover{
+     text-decoration: underline 1.5px black;
+     text-underline-offset: 3px;
+    }
+
+    .right{
+      display: flex;
+      gap: 20px;
+    }
+  
+    .Hero{
+      margin:10px 45px;
+      height: 250px;
+        background-image: url('https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Grid-Container-Feature-MSCOM-BlackFriday-Merch-FY26HOLPM?scl=1');
+      display: flex;
+      justify-content:space-around;
+      object-fit: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      align-items: center;
+      color: white;
+    }
+   button{
+    padding: 5px;
+    font-weight: 500;
+   } 
+    .Question{
+          margin:40px 45px;
+
+      background-image: linear-gradient(to top,#0967B3,#003A68,#1B4E84);
+      border-radius: 10px;
+      text-align: center;
+      /* margin: 50px 0; */
+      padding: 40px;
+     display: flex;
+     flex-direction: column;
+     color: white;
+    }
+    .ask{
+      padding: 20px;
+      position: relative;}
+
+      .ask .fas{
+        position: absolute;
+        right: 12%;
+        color: rgb(163, 158, 158);
+        top: 34px;
+      }
+      
+    .ask-box{
+      width: 80%;
+      height: 50px;
+      border-radius: 5px;
+      border: none;
+              border-bottom: 4px solid #77afdc;
+              padding: 0 10px;
+          }
+          .Buttons {
+  display: flex;
+  flex-wrap: wrap;     /* allows buttons to move to next line */
+  gap: 15px;           /* spacing between buttons */
+  justify-content: center;
+ /* optional: center them */
+}
+
+
+.Lumbini nav {
+  padding: 40px 45px;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+gap: 40px;}
+ 
+.Lumbini nav a{
+  text-decoration: underline;
+ font-size: 18px;
+ font-weight:500;
+}
+.Lumbini .fat{
+  font-size: 32px;
+  color: rgb(21, 21, 117);
+}
+.S{
+  gap: 15px;
+}
+ .Surface{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.Xbox{
+   display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+  .Accessories{
+     display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.business{
+   display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.Microsoft{
+   display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* .Drone{
+ 
+  margin: 40px 45px;
+  border-radius: 10px;
+   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;;
+padding: 10px 10px 10px 20px;
+display: flex;
+
+}
+.Shiv{
+  margin-right: 100px;
+
+} */
+  .ai {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 20px;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+        margin: 20px 0;
+        border-radius: 10px;
+      
+      }
+
+      .stories {
+        overflow: auto;
+        display: flex;
+        padding: 20px;
+    
+      }
+
+      .ai {
+        width: 100%;
+        flex-shrink: 0;
+        margin-left: 20px;
+       
+      }
+
+      .ai-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+
+      .learn {
+        border: none;
+        background-color: blue;
+        color: white;
+        padding: 10px 15px;
+        opacity: 0.7;
+        border-radius: 10px;
+      }
+
+      .learn:hover {
+        opacity: 1;
+      }
+
+      img {
+        width: 100%;
+        border-radius: 10px;
+      }
+
+.FTL{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px;
+  gap: 20px;
+}
+.M{
+  display: fl;
+}
+
+
+.Last{
+  background-color:#f1ededd6;
+display: grid;
+grid-template-columns: repeat(6, 2fr);
+gap: 10px;
+  padding: 50px 15px 45px 40px;
+}
+.O{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.O h3{
+  color: #3f3d3dee;
+}
+.O a{
+  color: rgb(92, 85, 85);
+  font-size: 14px;
+}
+
+
+          .Shiv {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+        padding: 20px;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+        margin: 100px 45px;
+
+        border-radius: 10px;}
+      
+        .Shiv-Ai{
+          display: flex;
+          flex-direction: column;
+          justify-content:center;
+        }
+         /* .Fars{
+          padding-top: 220px;
+         } */
+
+          /* align-items: center; */
+        
+      .Fars h2 {
+  font-size: 40px;
+  font-weight: 300;
+}
+
+.Fars p {
+  font-size: 20px;
+  padding: 20px 0;
+}
+      
+
+      /* .Shiv {
+        background-color: purple;
+        width: 100%;
+        flex-shrink: 0;
+        margin-left: 20px;
+       
+      } */
+/* 
+      .Shiv-ai {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-color: purple;
+      } */
+
+      .Design {
+        border: none;
+        background-color: blue;
+        color: white;
+        padding: 10px 15px;
+        opacity: 0.7;
+        border-radius: 10px;
+  
+      }
+      .Design button{
+        margin-top: 30px;
+      }
+
+      .Design:hover {
+        opacity: 1;
+    
+      }
+
+      .Shiv-img img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+      }
+
+      .sky{
+        background: linear-gradient(to right,#eaf4ff, #f8fbff);
+   padding: 20px 40px;
+      }
+/* task */
+.Taskwholebelow{
+
+  margin: 40px 0;
+}
+.Task{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 10px;
+  border-radius: 10px;
+  gap: 10px;
+  
+}
+.Girl{
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  display: flex;
+  flex-direction: column;
+ 
+  align-items: start;
+  border: 1px solid white;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 8px;
+  background-color: white;
+ 
+ 
+}
+.tt{
+  padding-left: 10px;
+  flex-grow: 1;
+}
+.Button{
+  margin-top: 20px;
+    padding-left: 10px;
+}
+.Button button{
+    background-color: blue;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+}
+
+.Taskk{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  padding: 10px;
+  border-radius: 10px;
+}
+.Boy{
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  display: flex;
+  flex-direction: column;
+gap: 20px;
+  align-items: start;
+  border: 1px solid white;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 8px;
+  background-color: white;
+ 
+}
+.ttt{
+  flex-grow: 1;
+}
+
+.Buttton button{
+    background-color: blue;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    margin-top: 50px;
+}
+
+     @media(max-width:550px){
+      .Left{
+        flex-direction: column;
+      }
+    }
+     @media(max-width:550px){
+      .right{  display: none;      }
+    }
+     @media(max-width:880px){
+      .Hero{  padding-bottom:20px;   
+      height: auto;
+    flex-direction: column-reverse;   }
+    }
+ @media(max-width:530px){
+      .text-info{  text-align: center;  
+      padding: 0 20px;    }
+    }  
+/* for second blue image */
+      /* @media(max-width:965px){
+      .Buttons{
+        gap: 10px;
+      }
+    }
+      @media(max-width:652px){
+      .Buttons{
+        flex-direction: ;
+      }
+    }
+      @media(max-width:1000px){
+      .ask .fas{
+display: none;      }
+    } */
+/* ------------ RESPONSIVE FOR QUESTION SECTION ------------- */
+
+@media (max-width: 768px) {
+
+  .Question {
+    margin: 20px;
+    padding: 30px;
+  }
+
+  .ask {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .ask-box {
+    width: 100%;
+  }
+
+  .ask .fas {
+    right: 10%;
+    top: 34px;
+  }
+
+  .Buttons button {
+              /* buttons full width */
+    text-align: center;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .Question {
+    padding: 20px;
+  }
+
+  .ask .fas {
+    right: 8%;
+    top: 32px;
+  }
+
+  
+
+  .Buttons button {
+               /* one button per line on small phones */
+    font-size: 13px;
+    padding: 10px;
+  }
+}
+
+ @media(max-width:740px){
+      .Task{ 
+        grid-template-columns:repeat(2, 1fr) ;
+      }
+    }
+     @media(max-width:440px){
+      .Task{ 
+        grid-template-columns:1fr ;
+      }
+    }
+ @media(max-width:740px){
+      .Taskk{ 
+        grid-template-columns:repeat(2, 1fr);
+      }
+    }
+     @media(max-width:440px){
+      .Taskk{ 
+        grid-template-columns:1fr ;
+      }
+    }
+     @media(max-width:322px){
+      .Lumbini a{ 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+    /* ---------- RESPONSIVE FOR LUMBINI ---------- */
+@media (max-width: 768px) {
+  .Lumbini nav {
+    flex-wrap: wrap;          /* allow items to go to next line */
+    gap: 25px;
+    padding: 20px;
+  }
+
+  .Lumbini .S {
+    width: 45%;               /* two items per row */
+  }
+
+  .Lumbini nav a {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .Lumbini .fat {
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 480px) {
+  .Lumbini .S {
+    width: 100%;              /* one item per row on very small phones */
+  }
+
+  .Lumbini nav a {
+    font-size: 15px;
+  }
+
+  .Lumbini .fat {
+    font-size: 24px;
+  }
+}
+    /* for drone */
+    @media (max-width: 900px) {
+  .Shiv {
+    grid-template-columns: 1fr;
+    margin: 60px 25px;
+    text-align: center;
+  }
+
+  .Shiv-Ai {
+    align-items: center;
+  }
+
+  .Fars h2 {
+    font-size: 32px;
+  }
+
+  .Fars p {
+    font-size: 18px;
+  }
+}
+@media (max-width: 480px) {
+  .Shiv {
+    padding: 20px;
+    margin: 40px 15px;
+  }
+
+  .Fars h2 {
+    font-size: 24px;
+  }
+
+  .Fars p {
+    font-size: 16px;
+  }
+
+  .Design {
+    width: 100%;
+  }
+}
+
+   @media(max-width:840px){
+      .Last{ 
+        grid-template-columns:repeat(3, 1fr);
+      }
+    }
+     @media(max-width:440px){
+      .Last{ 
+        grid-template-columns:repeat(2, 1fr);
+      }
+    }
+
+ 
+  </style>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://unpkg.com/scrollreveal"></script> 
+     <script src="https://unpkg.com/scrollreveal"></script>
+  </head>
+<body>
+  <header>
+    <div class="Left">
+      <div class="logo"> <img style="height: 30px;" src="assets/logo.png" alt=""></div>
+      <nav>
+         <a href="">Microsoft 365</a>
+          <a href="">Teams</a>
+          <a href="">Copilot</a>
+          <a href="">Windows</a>
+          <a href="">Surface</a>
+          <a href="">Xbox</a>
+          <a href="">Cyber Week Deals</a>
+          <a href="">Small Business</a>
+          <a href="">Support</a>
+      </nav>
+    </div>
+    <div class="right">
+ <i class="fa-solid fa-magnifying-glass"></i>
+        <i class="fa-solid fa-cart-shopping"></i>  </div>
+
+  </header>
+
+  <section class="Hero">
+    <div class="text-info">
+      <h1 style="font-size: 2.5 rem;">Cyber Week is here</h1>
+      <p style="padding: 10px 0;">Don't miss your chance to save on select surface, Xbox, and more.</p>
+       <button>Shop Deals</button>   </div>
+       <div class="Img"> <img style="height: 150px;" src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Feature-MSCOM-BlackFriday-Merch-FY26HOLPM:VP4-1468x826?fmt=png-alpha" alt=""></div>
+  </section>
+  
+
+  <section class="Question">
+  <h1>Hi there.How can we help?</h1>
+  <div class="ask">
+   <input type="text" placeholder="Ask me a question" class="ask-box">
+<i class="fa-regular fa-paper-plane fas"></i></div>
+
+    <div class="Buttons">
+    <button style=" color: white; border-radius: 20px; background-color:rgba(1, 1, 163, 0.734); border: 1px solid white; padding: 8px;">Which PC is right for me?</button>
+    <button style=" color: white;  border-radius: 20px; margin:0 10px ; background-color:rgb(1, 1, 163, 0.734); border:1px solid white;padding: 8px;">Sign in to my account</button>
+    <button style=" color: white;   border-radius: 20px; background-color:rgb(1, 1, 163, 0.734); border:1px solid white;padding: 8px;">How can my business use Azure?</button>
+    </div></section>
+
+
+<section class="Lumbini">
+  <nav>
+    <div class=" S Surface">
+     <i class="fa-solid fa-laptop fat"></i>
+    <a href="">Cyber Week deals:Surface</a></div>
+    <div class="S Xbox">
+ <i class="fa-brands fa-xbox fat"></i>
+<a href="">Cyber Week Deals:Xbox</a></div>
+<div class="S Accessories">
+ <i class="fa-regular fa-keyboard fat"></i>
+<a href=""> Cyber Week deals:Accessories</a></div>
+<div class="S business">
+ <i class="fa-regular fa-building fat"></i>
+<a href="">Shop for your business</a></div>
+<div class="S Microsoft">
+ <i class="fa-brands fa-microsoft fat"></i>
+<a href="">Choose your Microsoft 365</a></div>
+
+</nav>
+</section>
+
+<section class="Shiv"> 
+
+      
+        <div class="Shiv-Ai">
+          <div class="Fars">
+            <h2>Xbox Design Lab controllers</h2>
+            <p style="padding: 20px 0;">Add free engraving and save up to 20% off select controllers and components to give a gift <br>that's uniquely theirs.</p>
+          </div>
+
+          <div class="Design-button">
+            <button class="Design">Design yours</button>
+          </div>
+        </div>
+
+        <div>
+          <img
+            src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Card-Horizontal-Xbox-Design-Lab-Controller-Trio-FY26HOL?resMode=sharp2&op_usm=1.5,0.65,15,0&wid=3840&hei=2160&qlt=95&fit=constrain"
+            alt="">
+        </div>
+      </div>
+</section>
+
+
+
+<section class="sky">
+<section class="Taskwholebelow">
+   <h1 style="font-weight: 10;" >For business</h1></div>
+  <section class="Taskk">
+    <div class="Boy 1">
+      <div class="Imgg"> <img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Content-Card-Surface-Laptop-5G-Platinum-Commercial?resMode=sharp2&op_usm=1.5,0.65,15,0&wid=520&hei=224&qlt=85&fit=constrain" alt="">
+ </div>
+ <div class="ttt"><h3> Save up to $135 off select Surface Laptop for Business</h3>
+           <p style="padding-top: 8px;"  >13.8 and 15-inch devices feature
+Windows 11 Pro, uncompromising power, all-day battery life, and Intel ®
+Core™ Ultra processors (Series 2).</p> </div>
+           <div class="Buttton"> <button>Shop Now</button></div>
+    </div>
+     <div class="Boy 2">
+      <div class="Imgg"> <img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Content-Card-Microsoft-365-Copilot-COMMR-0625?resMode=sharp2&op_usm=1.5,0.65,15,0&wid=520&hei=224&qlt=85&fit=constrain" alt=""></div>
+      <div class="ttt"><h3>Microsoft 365 Copilot</h3>
+           <p style="padding-top: 8px;" >Save time and focus on the things that matter most with Al in Microsoft 365 for business.</p> </div>
+           <div class="Buttton"> <button>Learn More</button></div>
+          </div>
+
+            <div class="Boy 3">
+              <div class="Imgg"> <img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Content-Card-Microsoft-Teams-Commercial-Meeting?resMode=sharp2&op_usm=1.5,0.65,15,0&wid=520&hei=224&qlt=85&fit=constrain" alt=""></div>
+ <div class="ttt"><h3>Get Microsoft Teams for your business</h3>
+           <p style="padding-top: 8px;" >Online meetings, chat, real-time collaboration, and shared cloud storage-all in one place </p> </div>
+           <div class="Buttton"> <button>Find the right plan for your business</button></div>
+          </div>
+
+     <div class="Boy 4">
+      <div class="Imgg"> <img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Content-Card-Azure-AI-Bloom?resMode=sharp2&op_usm=1.5,0.65,15,0&qlt=85" alt=""></div>
+      <div class="ttt"><h3>Join the era of AI</h3>
+           <p style="padding-top: 8px;" >Create, communicate, and code with the latest Microsoft AI solutions.</p> </div>
+           <div class="Buttton"> <button>Explore AI solutions</button></div>
+          </div>
+</section>
+</section>
+
+  <section class="Taskwholebelow">
+  <h1  style="font-weight:10;">Get to know AI and Copilot</h1>
+  <section class="Task">
+    <div class="Girl 1">
+      <div class="Img"> <img src="https://plus.unsplash.com/premium_photo-1720287601300-cf423c3d6760?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8dmliZSUyMGNvZGluZ3xlbnwwfHwwfHx8MA%3D%3D" alt="">
+ </div>
+ <div class="tt"><h3>Turning words into apps</h3>
+           <p style="padding-top: 8px;"  >Vibe coding' allows people to build software by talking through an idea with a Microsoft Ai tool that writes the code.</p> </div>
+           <div class="Button"> <button>Learn More</button></div>
+    </div>
+     <div class="Girl 2">
+      <div class="Img"> <img src="https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bmF0dXJlfGVufDB8fDB8fHww" alt=""></div>
+      <div class="tt"><h3>The Future of conversation</h3>
+           <p style="padding-top: 8px;" > Researchers hope that a new AI tool will help biologists locate and restore bags,marshes,and other vital wetlands.</p> </div>
+           <div class="Button"> <button>Find out how</button></div>
+          </div>
+
+            <div class="Girl 3">
+              <div class="Img"> <img src="https://plus.unsplash.com/premium_photo-1723874442260-dbf108e14efc?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fHBsYWNlJTIwb2YlMjB3b3JrfGVufDB8fDB8fHww" alt=""></div>
+ <div class="tt"><h3>Your new on-call assistant</h3>
+           <p style="padding-top: 8px;" >Here are six ways Researchers, an AI agent in Microsoft 365 Copilot, can help you knock your toughest work tasks out of the park. </p> </div>
+           <div class="Button"> <button>Learn More</button></div>
+          </div>
+
+  </section>
+  </section>
+    </section>
+
+ <section class="stories">
+
+      <div class="ai">
+        <div class="ai-info">
+          <div></div>
+          <div>
+            <h2>Protecting biodiversity with AI</h2>
+            <p style="padding: 10px 0;">Microsoft’s AI for Good Lab created Project SPARROW to observe wildlife in remote locations.</p>
+          </div>
+
+          <div class="learn-button">
+            <button class="learn">Learn more</button>
+          </div>
+        </div>
+
+        <div>
+          <img
+            src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Card-Horizontal-AI-Project-Sparrow?resMode=sharp2&op_usm=1.5,0.65,15,0&qlt=85"
+            alt="">
+        </div>
+
+
+      </div>
+
+
+      <div class="ai">
+        <div class="ai-info">
+          <div></div>
+          <div>
+            <h2>Protecting biodiversity with AI</h2>
+            <p>Microsoft’s AI for Good Lab created Project SPARROW to observe wildlife in remote locations.</p>
+          </div>
+
+          <div class="learn-button">
+            <button class="learn">Learn more</button>
+          </div>
+        </div>
+
+        <div>
+          <img
+            src="https://cdn-dynmedia-1.microsoft.c
+om/is/image/microsoftcorp/Card-Horizontal-AI-Project-Sparrow?resMode=sharp2&op_usm=1.5,0.65,15,0&qlt=85"
+            alt="">
+        </div>
+      </div>
+
+    </section>
+
+<script>
+  const rev = ScrollReveal({
+    Delay:500,
+    duration:500,
+    reset:true,
+    distance:'100px'});
+
+  rev.reveal('.Left',{
+   
+    origin:'left',
+    });
+
+  rev.reveal('.right',{
+  origin:'right',
+     });
+
+  rev.reveal('.Hero',{
+  
+    origin:'top',
+     });
+       rev.reveal('.Question',{
+  
+    origin:'bottom',
+     });
+    rev.reveal('.Taskk .Boy', {
+  origin: 'bottom',
+  distance: '40px',
+  duration: 600,
+  interval: 150,   // stagger effect
+  easing: 'ease-out'
+});
+
+// GIRL cards (Task)
+rev.reveal('.Task .Girl', {
+  origin: 'bottom',
+  distance: '40px',
+  duration: 600,
+  interval: 150,
+  easing: 'ease-out'
+}); 
+  /* LUMBINI ICON BOXES */
+  rev.reveal('.Lumbini .S', {
+    origin: 'bottom',
+    distance: '40px',
+    duration: 600,
+    interval: 150,
+    easing: 'ease-out'
+  });
+
+  /* SHIV SECTION (text + image separately for style) */
+  rev.reveal('.Shiv-Ai', {
+    origin: 'left',
+    distance: '60px',
+    duration: 700,
+    delay: 150
+  });
+
+  rev.reveal('.Shiv img', {
+    origin: 'right',
+    distance: '60px',
+    duration: 700,
+    delay: 150
+  });
+
+  /* STORIES SCROLLER (each card) */
+  rev.reveal('.stories .ai', {
+    origin: 'bottom',
+    distance: '50px',
+    duration: 650,
+    interval: 200
+  });
+
+  /* FTL (Follow Microsoft) */
+  rev.reveal('.FTL h3', {
+    origin: 'top',
+    distance: '30px',
+    duration: 500
+  });
+
+  rev.reveal('.FTL img', {
+    scale: 0.85,
+    duration: 600,
+    interval: 150
+  });
+
+</script>
+
+
+
+</body>
+</html> 
+
+<section class="FTL">
+  <h3 style="font-weight: 100;">Follow Microsoft</h3>
+  <div class="M">
+  <img style="height: 40px; width: 40px;" src="assets/social-fb.png" alt="">
+  <img style="height:40px; width: 40px; margin:0 15px ;"  src="assets/social-twitter.png" alt="">
+  <img style="height: 40px; width: 40px;" src="assets/social-linkedin.png" alt=""></div>
+</section>
+
+<section class="Last">
+
+  <div class="O One">
+    <h3>What's new</h3>
+    <a href="">Surface Pro</a> <a href="">Surface Laptop</a> <a href="">Surface Laptop Studio 2</a> <a href="">Copilot for organizations</a> <a href="">Copilot for personal use</a> <a href="">Ai in Windows</a>    </div>
+   
+    <div class="O Two">  
+    <h3>Microsoft Store</h3>
+    <a href="">Account profile</a> <a href=""> Download Center</a> <a href="">Microsoft Store support</a> <a href=""> Returns</a> <a href="">Order tracking</a> <a href="">Flexible Payments</a> 
+   </div>
+
+    <div class="O Three">
+     <h3>Education</h3>
+     <a href="">Microsoft in Education</a> <a href="">Devices for education</a> <a href="">Microsoft Teams for Education</a> <a href="">Microsoft 365 Education</a> <a href="">How to buy for your school</a> <a href="">AI for education</a>
+      </div>
+    
+    
+     <div class="O Four">
+      <h3>Business</h3>
+      <a href="">Microsoft Cloud</a> <a href="">Microsoft Security</a> <a href="">Dynamics 365</a> <a href="">Microsoft 365</a> <a href="">Microsoft Power Platform</a> <a href="">Microsoft Teams</a> 
+        </div>
+      <div class="O Five">
+        <h3>Developer and IT</h3>
+        <a href="">Azure</a> <a href="">Microsoft Developer</a> <a href="">Microsoft Learn</a> <a href="">Support for AI marketplace apps</a> <a href="">Microsoft Tech Community</a> <a href="">Microsoft Market Place</a>
+            </div>
+       <div class="O Six">
+        <h3>Company</h3>
+         <a href="">Careers</a> <a href="">About Microsoft</a> <a href="Company news"></a> <a href="">Privacy at Microsft</a> <a href="">Investors</a> <a href="">Susainablity</a>     </div>
+
+</section>
+

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movieposter2</title>
+    <style>
+        *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+     .Card{
+    height: 100vh;
+    width:100vw;
+background-color:grey;
+position: relative;
+ }
+  .Card .left{
+    height: 400px;
+    width: 350px;
+    top: 100px;
+    left: 100px;
+position: absolute;
+background-color:yellow;}
+  .img{
+    height: 100%;
+    width: 100%;  object-fit: cover;
+    background-color: yellow; /* makes the image cover the box without distortion */
+     /* optional: rounded corners */
+}
+    
+
+
+    .Card .right{
+    height: 400px;
+    width: 500px;
+    top: 100px;
+    left: 400px;
+position: absolute;
+background-color: black;
+}
+ .Card .header{
+    color: white;
+    font-size: 1rem;
+    
+    position: relative;
+    margin: 20px;
+ }
+ .below{
+    z-index: 15;
+    height: 40px;
+    width: 150px;
+    position: absolute;
+    background-color:black;
+    border: 3px solid yellow;
+    border-color:yellow ;
+    border-radius: 5px;
+    color: yellow;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+ }
+
+ .Card .right a {
+    color: yellow;
+    text-decoration: underline; /* or none */
+}
+    </style>
+</head>
+<body>
+    <div class="Card"> <div class="left"><img class="img" src="https://www.atomicmoviestore.com/cdn/shop/files/kill_bill_1.png?v=1734541045" alt=""></div>
+<div class="right"> <div class="header"><h1>KILL BILL:VOL.1</h1><br><span>2003&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;111min&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Action</span><br><span></span> <br><span>★&nbsp★&nbsp★&nbsp;★&nbsp;★&nbsp★&nbsp★&nbsp★</span> <br>
+<br><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt impedit voluptatum doloremque maxime provident sint optio ipsum eius? Distinctio nesciunt recusandae quidem reiciendis, quae minima officia aut tenetur et amet iusto quas nulla saepe quibusdam rerum accusamus blanditiis impedit voluptate ad temporibus repellat similique? Itaque laboriosam voluptate vitae eaque repellendus...</p><span><a href="forpractice.html">Read More</a><br><br></span>
+<div class="below"> ►&nbsp;&nbsp;Watch Trailer</div></div></div></div>
+    
+</body>
+</html>
