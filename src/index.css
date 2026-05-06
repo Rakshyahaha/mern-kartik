@@ -1,1 +1,52 @@
 @import "tailwindcss";
+
+
+ @theme {
+      /* --color-*: initial; */
+  --color-white: #fff;
+  --color-purple: #3f3cbb;
+  --color-midnight: #121063;
+  --color-tahiti: #3ab7bf;
+  --color-bermuda: #78dcca;
+  --text-large: 50px;
+
+/* for custom animation of the task by sir */
+--animate-somes: somes 1s ease-in infinite;
+
+@keyframes somes {
+    10%{
+        /* color:red;
+        transform:rotate(180deg) */
+    }
+    50%{
+        color:green;
+    }
+}}
+
+
+
+@layer base{
+    h1{
+        @apply text-3xl;
+    }
+     h2{
+        @apply text-2xl;
+    }
+     h3{
+        @apply text-xl;
+    }
+     h4{
+        @apply text-lg;
+    }
+     h5{
+        @apply text-base;
+    }
+     h6{
+        @apply text-sm;
+    }
+    p{
+        @apply text-base;
+
+    };
+}
+
