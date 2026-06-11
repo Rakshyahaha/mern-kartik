@@ -1,4 +1,5 @@
 import { baseUrl } from "@/config/api";
+import { useApi } from "@/hooks/apiHooks";
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router"
@@ -7,40 +8,41 @@ import { useParams } from "react-router"
 export default function Meal() {
 
     const {id} = useParams();
-     const[data,setData] = useState([]);
-            const[load,setLoad] = useState(false);
-            const[err,setErr] = useState();
+    const[data, load, err]= useApi(`lookup.php` , {i: id});
+    //  const[data,setData] = useState([]);
+    //         const[load,setLoad] = useState(false);
+    //         const[err,setErr] = useState();
         
-        const getData = async() =>{
-            setLoad(true);
+    //     const getData = async() =>{
+    //         setLoad(true);
          
-            try{
-              const response = await axios.get(`${baseUrl}/lookup.php`,{
-             params:{
-                i:id
-             }
+    //         try{
+    //           const response = await axios.get(`${baseUrl}/lookup.php`,{
+    //          params:{
+    //             i:id
+    //          }
             
-            });
-        setLoad(false);
-        setData(response.data.meals);
+    //         });
+    //     setLoad(false);
+    //     setData(response.data.meals);
         
-            } catch(err){
-         setLoad(false);
-         setErr(err.message);
-            }
+    //         } catch(err){
+    //      setLoad(false);
+    //      setErr(err.message);
+    //         }
         
-        }
+    //     }
         
-        useEffect(() => {
-          getData();
-        }, []);
+    //     useEffect(() => {
+    //       getData();
+    //     }, []);
          if(load) return <h1>loading...</h1>
     if (err) return <h1 className ="text-red-300">{err}</h1>
 console.log(data)
   return (
     <div className='p-5'>
 
-{data.map((meal) => {
+{data.meals?.map((meal) => {
 const videoKey = meal.strYoutube.split('v=')[1];
 
 let ingredientKeysNames = [];
@@ -51,7 +53,7 @@ let measuresKeysNames = [];
         if(!meal[key]) return;
              ingredientKeysNames.push(meal[key]);
    }
-  })
+  }) 
 }
 
 {          

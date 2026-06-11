@@ -1,4 +1,5 @@
 import { baseUrl } from "@/config/api";
+import { useApi } from "@/hooks/apiHooks";
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router";
@@ -7,28 +8,7 @@ import { useNavigate } from "react-router";
 export default function CategoryMeals() {
 
     const nav = useNavigate();
-    const[data,setData] = useState([]);
-    const[load,setLoad] = useState(false);
-    const[err,setErr] = useState();
-
-const getData = async () =>{
-    setLoad(true);
- 
-    try{
-      const response = await axios.get(`${baseUrl}/categories.php`)
-setLoad(false);
-setData(response.data.categories);
-
-    } catch(err){
- setLoad(false);
- setErr(err.message);
-    }
-
-}
-
-useEffect(() => {
-  getData();
-}, []);
+    const[data, load, err] = useApi(`categories.php`)
 
 if(load) return <h1>loading...</h1>
 if (err) return <h1 className ="text-red-300">{err}</h1>
@@ -40,7 +20,7 @@ console.log(data);
 <h2>Meal category</h2>
 <div className="grid grid-cols-4 max-lg:grid-cols-3 max-md:grid-cols-2 max-sm:grid-cols-1  gap-10 mt-6 justify-items-center">
 {
-data.map((category) => 
+data.categories?.map((category) => 
 (<div  
     onClick={() => nav(`/meal-list/${category.strCategory}`)}
 className="cursor-pointer"
